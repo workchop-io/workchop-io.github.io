@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Workchop</title>
+  <meta name="description" content="Get in touch with Workchop for help with our apps, press, partnerships, or just to say hello." />
+  <link rel="canonical" href="https://workchop.io/contact.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Workchop" />
+  <meta name="theme-color" content="#0a0b0d" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Workchop" />
+  <meta property="og:title" content="Contact · Workchop" />
+  <meta property="og:description" content="Get in touch with Workchop for help with our apps, press, partnerships, or just to say hello." />
+  <meta property="og:url" content="https://workchop.io/contact.html" />
+  <meta property="og:image" content="https://workchop.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact · Workchop" />
+  <meta name="twitter:description" content="Get in touch with Workchop for help with our apps, press, partnerships, or just to say hello." />
+  <meta name="twitter:image" content="https://workchop.io/og-image.png" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='2,2 13,2 9,30 2,30' fill='%23c8ff3c'/%3E%3Cpolygon points='16,2 30,2 30,30 11,30' fill='%23c8ff3c'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="logo" aria-label="Workchop home">
+        <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="2,2 13,2 9,30 2,30"/><polygon points="16,2 30,2 30,30 11,30"/></svg></span>
+        <b>work<span class="chop">chop</span></b>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HEAD -->
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow reveal">Contact</span>
+      <h1 class="reveal">Say hello.</h1>
+      <p class="lead reveal">Need a hand with one of our apps? Want to talk press or partnerships? Or just have a thought to share? We read every message and reply within one business day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-grid">
+        <!-- info -->
+        <div class="contact-info reveal">
+          <div class="channel">
+            <div class="lbl">General &amp; support</div>
+            <a href="mailto:hello@workchop.io">hello@workchop.io</a>
+          </div>
+          <div class="channel">
+            <div class="lbl">Press &amp; partnerships</div>
+            <a href="mailto:press@workchop.io">press@workchop.io</a>
+          </div>
+          <div class="channel">
+            <div class="lbl">Response time</div>
+            <p>Within 1 business day</p>
+          </div>
+          <div class="channel">
+            <div class="lbl">Where we are</div>
+            <p>Remote-first ✦ Worldwide</p>
+          </div>
+        </div>
+
+        <!-- form -->
+        <form class="form reveal" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Appfan" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@email.com" required />
+          </div>
+          <div class="field">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic">
+              <option value="">Choose a topic…</option>
+              <option>App support / a bug</option>
+              <option>Feedback or an idea</option>
+              <option>Press</option>
+              <option>Partnership</option>
+              <option>Careers</option>
+              <option>Just saying hi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Your message</label>
+            <textarea id="msg" name="msg" placeholder="Tell us what's on your mind…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send message <span class="arrow">↗</span></button>
+          <p class="form-note">Works out of the box via your email app. To collect submissions automatically, add a Formspree endpoint in <code>script.js</code>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="2,2 13,2 9,30 2,30"/><polygon points="16,2 30,2 30,30 11,30"/></svg></span><b>work<span class="chop">chop</span></b></a>
+          <p>An AI-native studio building its own apps. Everything we make, in one place.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Studio</h5>
+            <a href="index.html">Home</a>
+            <a href="apps.html">Apps</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h5>Apps</h5>
+            <a href="apps.html">All apps</a>
+            <a href="apps.html">iOS</a>
+            <a href="apps.html">Android</a>
+            <a href="apps.html">Web</a>
+          </div>
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <a href="mailto:hello@workchop.io">hello@workchop.io</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">X / Twitter</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Workchop Studio. All rights reserved.</span>
+        <span>Built fast. Built well.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

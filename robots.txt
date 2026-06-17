@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://workchop.io/sitemap.xml
