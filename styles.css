@@ -241,6 +241,32 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; line-height: 1
 .step p { color: var(--muted); max-width: 60ch; }
 
 /* ============================================
+   Featured spotlight (homepage)
+   ============================================ */
+.spotlight {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 320px;
+  padding: clamp(32px, 6vw, 64px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.35s var(--ease), border-color 0.3s;
+}
+.spotlight::before { content: ""; position: absolute; inset: 0; z-index: 0; background: var(--sl-grad, linear-gradient(135deg, #1a2e2a, #0c1210)); }
+.spotlight:hover { transform: translateY(-4px); border-color: var(--accent); }
+.spotlight > * { position: relative; z-index: 1; }
+.spotlight .top { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; }
+.spotlight h3 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.02; margin-bottom: 16px; }
+.spotlight p { color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 52ch; }
+.spotlight .applink { margin-top: 28px; display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-head); font-size: 1.05rem; color: var(--accent); }
+.spotlight .applink .arrow { transition: transform 0.25s var(--ease); }
+.spotlight:hover .applink .arrow { transform: translate(3px, -3px); }
+.spotlight-mark { position: absolute; z-index: 0; right: clamp(8px, 4vw, 56px); top: 50%; transform: translateY(-50%); font-family: var(--font-head); font-weight: 700; font-size: clamp(9rem, 24vw, 19rem); line-height: 1; color: rgba(255, 255, 255, 0.05); pointer-events: none; user-select: none; }
+
+/* ============================================
    Work / projects
    ============================================ */
 .work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
