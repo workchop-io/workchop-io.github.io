@@ -385,6 +385,18 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; line-height: 1
 .footer-col a { display: block; color: var(--muted); font-size: 0.95rem; padding-block: 6px; transition: color 0.2s; }
 .footer-col a:hover { color: var(--accent); }
 .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 28px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 0.88rem; }
+.footer-bottom a { color: inherit; transition: color 0.2s; }
+.footer-bottom a:hover { color: var(--accent); }
+
+/* Legal / long-form pages */
+.legal { max-width: 760px; }
+.legal h2 { font-size: 1.4rem; margin: 38px 0 12px; }
+.legal p, .legal li { color: var(--muted); margin-bottom: 12px; line-height: 1.7; }
+.legal ul { padding-left: 20px; list-style: disc; margin-bottom: 12px; }
+.legal li { margin-bottom: 8px; }
+.legal a { color: var(--accent); }
+.legal .updated { color: var(--muted-2); font-size: 0.9rem; }
+.legal strong { color: var(--text); font-weight: 600; }
 
 /* ============================================
    Page header (sub pages)

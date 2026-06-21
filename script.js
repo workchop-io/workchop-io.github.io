@@ -195,9 +195,7 @@
     var SPOTLIGHT_APPS = [
       { name: "Reshuffy", tag: "Music", status: "Live", statusClass: "live", href: "https://reshuffy.com", external: true, cta: "Visit site", grad: "linear-gradient(135deg,#1a2e2a,#0c1210)", initial: "R", blurb: "Clean up your Spotify playlists without the fear. Fix broken tracks, kill duplicates, and reorganise by mood and genre, always with a preview first." },
       { name: "Dailygrasp", tag: "Learning", status: "In build", statusClass: "beta", href: "https://dailygrasp.app/", external: true, cta: "Visit site", grad: "linear-gradient(135deg,#1d2b1a,#0d0f0c)", initial: "D", blurb: "A 60-second AI summary of a Wikipedia article, every day. Dial it from everyday facts to deep, nerdy rabbit holes." },
-      { name: "Journally", tag: "Journal", status: "In build", statusClass: "soon", href: "/apps", external: false, cta: "Explore apps", grad: "linear-gradient(135deg,#1a2330,#0c0e12)", initial: "J", blurb: "Just talk, and it quietly sorts out your day. Private by design, with everything kept on your phone." },
-      { name: "Raydr", tag: "Events", status: "Live", statusClass: "live", href: "https://raydr.live/", external: true, cta: "Visit site", grad: "linear-gradient(135deg,#261a2e,#0e0c12)", initial: "R", blurb: "Like Skyscanner, but for nights out. Every local event in one tidy calendar." },
-      { name: "Mutual", tag: "Dating", status: "In build", statusClass: "soon", href: "/apps", external: false, cta: "Explore apps", grad: "linear-gradient(135deg,#2e261a,#120f0c)", initial: "M", blurb: "Dating that actually looks at who you click with, not just photos. Less swiping, more connecting." }
+      { name: "Raydr", tag: "Events", status: "Live", statusClass: "live", href: "https://raydr.live/", external: true, cta: "Visit site", grad: "linear-gradient(135deg,#261a2e,#0e0c12)", initial: "R", blurb: "Like Skyscanner, but for nights out. Every local event in one tidy calendar." }
     ];
     var app = SPOTLIGHT_APPS[Math.floor(Math.random() * SPOTLIGHT_APPS.length)];
     slEl.setAttribute("href", app.href);
